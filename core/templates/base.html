@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="pt-br">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">   
 	    <meta charset="utf-8">
-	    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}">
+	    {% load staticfiles %}
+	    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}">
 	    <link rel="stylesheet" type="text/css" href="{% static 'app/content/Base_layout.css' %}" />
-	    <link rel="stylesheet" type="text/css" href="{% static 'font.css' %}" > 
-	    <link rel="stylesheet" type="text/css" href="{% static 'mobile.css' %}" >  
+	    <link rel="stylesheet" type="text/css" href="{% static 'app/content/font.css' %}" > 
+	    <link rel="stylesheet" type="text/css" href="{% static 'app/content/mobile.css' %}" >  
         <title>
 		{% block title %}
 

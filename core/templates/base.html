@@ -3,17 +3,15 @@
     <head>
     	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        {% load staticfiles %}
-        <link rel="stylesheet" type="text/css" href="{% static 'core/static/Base_layout.css' %}" />
-		<link rel="stylesheet" type="text/css" href="{% static 'core/static/font.css' %}" />
-		<link rel="stylesheet" type="text/css" href="{% static 'core/static/mobile.css' %}" media="(max-width: 320px)" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/static/icone.png">
+	    <link rel="stylesheet" type='text/css' href='/static/Base_layout.css' media="all">
+	    <link rel="stylesheet" type='text/css' href='/static/font.css' media="all">	    
+	    <link rel="stylesheet" type='text/css' href='/static/mobile.css' media="all" media="(max-width: 320px)">		
+	    <link rel="icon" type="image/png" sizes="16x16" href="/static/icone.png">
 		<title>
 			{% block title %}
 
-    		{% endblock %}
+    			{% endblock %}
 		</title>
-        
     </head>
 										
     <body>

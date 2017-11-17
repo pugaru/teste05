@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{% extends 'base.html' %}
 		{% block title %}
 		Home.
@@ -13,8 +15,11 @@
 		</ul>
  <center>
 		<texto_homepage>
+		<br><br>
 			{% if usuario %}
-				<p><h2>Olá {{ usuario }},tudo bem? Gostaria de um café?</h2></p>
+				<p><h2>Olá {{ usuario }},
+				<br>tudo bem?
+				<br>Gostaria de um café?</h2></p>
 			{% endif %}
 		</texto_homepage>	
 
